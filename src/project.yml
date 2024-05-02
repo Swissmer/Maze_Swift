@@ -1,0 +1,26 @@
+name: Maze
+
+options:
+  bundleIdPrefix: x
+  deploymentTarget:
+    macOS: 14.0
+
+targets:
+  Maze:
+    type: application
+    platform: macOS
+    sources: [Maze, Tests/test.txt]
+    postCompileScripts:
+      - script: |
+          sh swiftlint.sh
+        name: Swiftlint
+
+      
+  Tests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests]
+    dependencies:
+      - target: Maze
+
+
