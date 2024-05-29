@@ -21,7 +21,7 @@ dist: build
 	tar -czf Maze.tgz .
 
 dvi:
-	open README.md
+	open ../README.md
 
 test:
 	xcodebuild test -scheme $(PROJECT_NAME)
