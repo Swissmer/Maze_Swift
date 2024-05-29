@@ -33,9 +33,9 @@
 ## Example
 
 <div style="display: flex; justify-content: space-around;">
-    <img src="./misc/images/play1.png" width="300">
-    <img src="./misc/images/play2.png" width="300">
-    <img src="./misc/images/play3.png" width="300">
+    <img src="./misc/images/play1.png" width="250">
+    <img src="./misc/images/play2.png" width="250">
+    <img src="./misc/images/play3.png" width="250">
 </div>
 
 ## Install
